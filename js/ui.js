@@ -14,7 +14,9 @@ class UI {
     div.className = "book-div";
     h3.innerText = `Title : ${book.title}`;
     h4.innerText = `Author :  ${book.author}`;
-    button.innerHTML = "remove";
+    h3.className = 'book-header';
+    h4.className = 'book-header';
+    button.innerHTML = "x";
     button.id = book.id;
     button.type = "button";
     button.className = "rmv";

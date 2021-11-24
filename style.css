@@ -1,29 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Estonia&family=Inconsolata&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Kalam', cursive;
   list-style: none;
 }
 
+:root {
+  --inner-header: "Inconsolata", monospace;
+  --inner-content: "Estonia", cursive;
+  --col-dark: #272a31;
+  --col-red: #ec5242;
+  --col-light: #d3d3d3;
+}
+
 body {
-  background-image: linear-gradient(to bottom, #04082793, #6a737a);
-  min-height: 100vh;
-  font-family: 'Libre Baskerville', serif;
-  display: flex;
-  flex-direction: column;
+  background-image: url(./img/bg_1.jpg);
+}
+
+h1 {
+  font-size: 4em;
+  padding: 24px;
+}
+
+h2 {
+  font-size: 3em;
+  padding: 12px;
+  border-top: 2px dashed var(--col-dark);
+  margin-top: 8px;
 }
 
 h1,
 h2 {
-  margin: 40px 0;
   text-align: center;
-  z-index: 99;
-  color: #fff;
+  font-family: var(--inner-content);
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .books-wrapper {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -31,28 +54,51 @@ h2 {
 }
 
 input {
-  border: 1px solid greenyellow;
+  font-family: var(--inner-header);
 }
 
 .book-div {
-  width: 80%;
+  width: 50%;
   display: grid;
-  grid-template-columns: 40% 40% 20%;
-  column-gap: 10px;
-  background-color: black;
+  grid-template-columns: 45% 45% 10%;
+  background-color: #ec5242;
   color: white;
   padding: 12px;
   align-items: center;
   border-radius: 8px;
 }
 
+.book-div:nth-child(odd) {
+  background: var(--col-red);
+}
+
+.book-div:nth-child(even) {
+  background: var(--col-dark);
+}
+
+.book-header {
+  font-family: var(--inner-header);
+}
+
 button {
   padding: 3px;
-  border: 0.6px solid grey;
-  width: 60px;
-  height: 30px;
-  border-radius: 8px;
-  background-color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 26%;
+  height: 100%;
+  color: var(--col-light);
+  cursor: pointer;
+  justify-self: end;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+  font-size: 1em;
+}
+
+button:hover {
+  color: #fff;
+  transform: rotate(270deg);
 }
 
 .input-wrapper {
@@ -76,6 +122,9 @@ button {
   height: 50px;
   padding: 10px;
   font-size: 20px;
+  border: 1px dashed var(--col-dark);
+  background-color: var(--col-light);
+  border-radius: 12px;
 }
 
 .form-container input::placeholder {
@@ -83,9 +132,12 @@ button {
 }
 
 .form-container button {
-  width: 10%;
-  height: 60px;
+  width: 8%;
+  height: 30%;
   font-size: 20px;
-  background-color: greenyellow;
+  background-color: var(--col-dark);
   cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  transform: rotate(0deg);
 }
