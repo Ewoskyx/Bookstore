@@ -9,16 +9,28 @@
   </head>
   <body>
     <header>
-      <div class="header-top">
-        <h1 class="title1">Book Store</h1>
-      </div>
+      <nav class="navbar">
+        <div class="header-top">
+          <h1 class="title1">Book Store</h1>
+        </div>
+        <ul>
+          <li><a class="links" id="listbtn">List</a></li>
+          <li><a class="links" id="add-newbtn">Add New</a></li>
+          <li><a class="links" id="contactbtn">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="timer">00:00:00</div>
     </header>
-    <section class="books">
-      <h2>Added Books</h2>
-      <div class="books-wrapper" id="books-wrapper"></div>
+    
+    <section class="books" id="list">
+      
+      <div class="books-wrapper" id="books-wrapper">
+        <h2 class="list-header">List</h2>
+      </div>
     </section>
-    <section class="input-wrapper">
-      <h2>Insert Books</h2>
+
+    <section class="input-wrapper" id="add-new">
+      <h2 class="input-header">Add New</h2>
       <form id="formContainer" class="form-container">
         <input
           type="text"
@@ -37,6 +49,22 @@
         <button type="submit" id="add-btn">Add</button>
       </form>
     </section>
+    <section class="contact" id="contact">
+      <h2 class="contact-header">Contact Information</h2>
+      <div class="contact-body">
+        <p>Do have any question or you just want to say "Hello"?<br>
+        You can reach out to me!</p>
+        <ul>
+          <li>My e-mail: ewoskyx@gmail.com</li>
+          <li>My phone number: +905344942440</li>
+          <li>My address: Somewhere in the World</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer-wrapper">
+      <span class="footer-span">Copyright Ewoskyx 2021</span>
+    </footer>
     <script src="./app.js" type="module"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
   </body>
 </html>
