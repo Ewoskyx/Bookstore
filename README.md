@@ -6,6 +6,7 @@
 
 
 Additional description about the project and its features.
+Microverse project series: Bookstore to use localstorage crud operations.
 
 ## Built With
 
