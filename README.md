@@ -37,22 +37,13 @@ Not required
 
 
 
-## Authors
+## Author
 
 👤 **Evren Ersoy**
 
 - GitHub: [https://github.com/Ewoskyx]
 - Twitter: [https://twitter.com/Ewoskyx]
 - LinkedIn: [https://www.linkedin.com/in/evren-ersoy-206510179/]
-
-👤 **Brahim Didi**
-
-- GitHub: [https://github.com/brahimdidi]
-
-👤 **Ahmed Reda**
-
-- GitHub: [https://github.com/ReAliens]
-
 
 ## Show your support
 
