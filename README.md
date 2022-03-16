@@ -19,7 +19,7 @@ Microverse project series: Bookstore to use localstorage crud operations.
 ## Live Demo
 
 You can check the link below for the live demo.
-https://ewoskyx.github.io/awesome_books/
+https://ewoskyx.github.io/Bookstore/
 
 
 ## Getting Started
